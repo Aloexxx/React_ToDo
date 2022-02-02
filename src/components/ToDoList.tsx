@@ -80,7 +80,8 @@ function ToDoList(){
         setCategoryList(JSON.parse(tempC));
     },[])
     useEffect(()=>{
-        localStorage.setItem("todo",JSON.stringify(allToDos))
+        localStorage.setItem("todo",JSON.stringify(allToDos));
+        localStorage.setItem("category",JSON.stringify(categoryList));
     },[allToDos])
     return(
         <Container>
