@@ -27,9 +27,9 @@ function CreateButton(){
         setCategory(oldCategory=>[...oldCategory,{name:e.input,id:Date.now()}]);
         setValue("input","")
     }
-    useEffect(()=>{
-        localStorage.setItem("category",JSON.stringify(category))
-    },[category])
+    // useEffect(()=>{
+    //     localStorage.setItem("category",JSON.stringify(category))
+    // },[category])
     return (   
         <FormButton onSubmit={handleSubmit(onSubmit)}>
             <InputButton {...register("input")} placeholder="createToDoList"/>

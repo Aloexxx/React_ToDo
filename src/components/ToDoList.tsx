@@ -82,7 +82,7 @@ function ToDoList(){
     useEffect(()=>{
         localStorage.setItem("todo",JSON.stringify(allToDos));
         localStorage.setItem("category",JSON.stringify(categoryList));
-    },[allToDos])
+    },[allToDos,categoryList])
     return(
         <Container>
             <CreateCategoryBox>
